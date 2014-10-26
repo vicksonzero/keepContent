@@ -1,13 +1,16 @@
 //javascript:
 /**
- * Google Keep Quick Jump Plugin
+ * Google Keep Quick Jump Plugin 
+ * by Dickson(git:vicksonzero)
  * uncomment the above line (remove the first two //'s) to use the script
- * Disclaimer: use at your own risk, as it is just a hack to grab all 
+ * Disclaimer: 
+ * use at your own risk, as it is just a hack to grab all 
  * information from the page. It is not supported by Google at all
+ * 
+ * License: public domain
  */
 var a = (function() {
 	var options={
-		/*autoRefresh:0, /*refresh interval in seconds. use 0 to turn off*/
 		style:{
 			x:"0px",
 			y:"100px",
@@ -29,11 +32,11 @@ var a = (function() {
 
 	var buttons = document.createElement("div");
 	buttons.innerHTML = 
-		"<a href='javascript:void(0);' onclick='this.parentNode.collapse();'>Expand/Collapse</a>"+
+		"<a href='javascript:void(0);' onclick='this.parentNode.toggleCollapse();'>Expand/Collapse</a>"+
 		" | <a href='javascript:void(0);' onclick='this.parentNode.refresh();'>Refresh</a> "+
 		" | <a href='javascript:void(0);' onclick='this.parentNode.remove();'>Exit</a> "+
 		"";
-	buttons.collapse = function(){
+	buttons.toggleCollapse = function(){
 		listContainer.style.display = listContainer.style.display=="none"?"block":"none";
 	};
 	buttons.refresh = function refresh(){
@@ -47,9 +50,6 @@ var a = (function() {
 		document.getElementsByClassName(options.classNames.container)[0].removeChild(d);
 	};
 	d.appendChild(buttons);
-	/*if(options.autoRefresh>0){
-		setInterval(function(){buttons.refresh()},1000*options.autoRefresh);
-	}*/
 
 	listContainer = document.createElement("div");
 	setScrollerStyle(listContainer);
@@ -66,8 +66,6 @@ var a = (function() {
 				body: ""
 			};
 			b.title = element.getElementsByClassName(options.classNames.title)[0].innerHTML;
-			/*b.body=element.getElementsByClassName("h1U9Be-YPqjbf")[0].innerHTML;*/
-			/*console.log(b.title+"\n"+b.body);*/
 			titleList.push({
 				element: element,
 				title: b.title
