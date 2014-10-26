@@ -5,7 +5,7 @@ A neat bookmarklet to organize your Google Keep notes.
 
 
 #How to install
-1. open bookmarklet.js[1]
+1. open [bookmarklet.js][1]
 2. copy all the sourcecode from line `//javascript` to `})();`
 3. create a bookmark at your browser with your favourite title
 4. paste the content to the address field
