@@ -9,7 +9,7 @@ It creates a table of content for your Google Keep, and let you jump to a specif
 1. open [bookmarklet.js][1]
 2. copy all the sourcecode from line `//javascript:` all the way to `})();`
 3. create a bookmark in your browser and name it `keepContent`
-4. paste the content to the address field
+4. paste the source code to the address field
 5. remove the very first `//` signs from the code
 
 #How to use
