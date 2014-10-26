@@ -16,7 +16,9 @@ It creates a table of content for your Google Keep, and let you jump to a specif
 1. open Google Keep webapp from your browser
 2. click on the bookmarklet to inject a table of content to your page
 3. click on the title to jump to your notes
-4. click exit to remove the injected plugin
+4. click `expand/collapse` to temporary hide the table of content
+5. click `refresh` to rebuild the table of content if you have dynamically loaded new content
+6. click `exit` to remove the injected plugin
 
 #How to customize
 1. copy the source code to a text editor (like sublime)
