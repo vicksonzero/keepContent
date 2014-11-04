@@ -10,6 +10,7 @@
  * License: public domain
  */
 var a = (function() {
+	/* Edit this object to customize */
 	var options={
 		style:{
 			x:"0px",
@@ -27,6 +28,7 @@ var a = (function() {
 			title:"r4nke-YPqjbf"
 		}
 	};
+	/* Try not to edit beyond this line */
 	var listContainer;
 	var d = document.createElement("div");
 	setStyles(d);
