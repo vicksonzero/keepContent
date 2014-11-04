@@ -16,10 +16,11 @@ var a = (function() {
 			y:"100px",
 			width:"300px",
 			height:"550px",
-			/*if you cannot see all notes, try adjusting height or hit refresh*/
+			/* if you cannot see all notes, try adjusting height or hit refresh */
 			bgc:"rgba(100,100,100,0.2)",
 			zIndex:"1000"
 		},
+		activation:"onclick",/* any event on a link, eg: onclick, onmouseenter */
 		classNames:{
 			container:"notes-container",
 			card:"IZ65Hb-n0tgWb",
@@ -68,7 +69,7 @@ var a = (function() {
 			b.title = element.getElementsByClassName(options.classNames.title)[0].innerHTML;
 			titleList.push({
 				element: element,
-				title: b.title
+				title: b.title==""?"n/a":b.title
 			});
 
 		});
@@ -77,7 +78,7 @@ var a = (function() {
 			var li = document.createElement("li");
 			li.target = element.element;
 			li.scrollToCard = scrollToCard;
-			li.innerHTML = "<a href='javascript:void(0);' onclick='this.parentNode.scrollToCard()'>" + element.title + "</a>";
+			li.innerHTML = "<a href='javascript:void(0);' "+options.activation+"='this.parentNode.scrollToCard()'>" + element.title + "</a>";
 			list.appendChild(li);
 		});
 		listContainer.appendChild(list);
@@ -85,8 +86,6 @@ var a = (function() {
 	}
 
 	function scrollToCard() {
-		console.log("Scroll !");
-		console.log(this.target);
 		document.body.scrollTop = this.target.offsetTop;
 	}
 	function setStyles(d){
