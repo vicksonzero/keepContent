@@ -36,9 +36,10 @@ var a = (function() {
 	var buttons = document.createElement("div");
 	buttons.innerHTML = 
 		"<a href='javascript:void(0);' onclick='this.parentNode.toggleCollapse();'>Expand/Collapse</a>"+
-		" | <a href='javascript:void(0);' onclick='this.parentNode.refresh();'>Refresh</a> "+
+		" | <a href='javascript:void(0);' onclick='this.parentNode.refresh();'>Refresh<span class='needRefresh'></span></a> "+
 		" | <a href='javascript:void(0);' onclick='this.parentNode.remove();'>Exit</a> "+
 		"";
+	/* TODO: implement needRefresh */
 	buttons.toggleCollapse = function(){
 		listContainer.style.display = listContainer.style.display=="none"?"block":"none";
 	};
