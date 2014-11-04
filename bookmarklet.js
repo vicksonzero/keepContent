@@ -21,7 +21,7 @@ var a = (function() {
 			bgc:"rgba(100,100,100,0.2)",
 			zIndex:"1000"
 		},
-		activation:"onclick",/* any event on a link, eg: onclick, onmouseenter */
+		jumpToCardTrigger:"onclick",/* any event on a link, eg: onclick, onmouseenter */
 		classNames:{
 			container:"notes-container",
 			card:"IZ65Hb-n0tgWb",
@@ -80,7 +80,7 @@ var a = (function() {
 			var li = document.createElement("li");
 			li.target = element.element;
 			li.scrollToCard = scrollToCard;
-			li.innerHTML = "<a href='javascript:void(0);' "+options.activation+"='this.parentNode.scrollToCard()'>" + element.title + "</a>";
+			li.innerHTML = "<a href='javascript:void(0);' "+options.jumpToCardTrigger+"='this.parentNode.scrollToCard()'>" + element.title + "</a>";
 			list.appendChild(li);
 		});
 		listContainer.appendChild(list);
