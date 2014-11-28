@@ -69,7 +69,7 @@ var a = (function() {
 				title: "",
 				body: ""
 			};
-			b.title = element.getElementsByClassName(options.classNames.title)[0].innerHTML;
+			b.title = element.getElementsByClassName(options.classNames.title)[1].innerHTML;
 			titleList.push({
 				element: element,
 				title: b.title==""?"n/a":b.title
