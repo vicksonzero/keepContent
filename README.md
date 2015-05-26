@@ -5,6 +5,7 @@ A neat bookmarklet to organize your Google Keep notes.
 
 It creates a table of content for your Google Keep, and let you jump to a specific note by clicking on the title
 
+Last seen working date: **2015-05-26**
 
 #How to install
 1. open [bookmarklet.js][1]
