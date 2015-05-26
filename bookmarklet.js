@@ -2,7 +2,7 @@
 /**
  * Google Keep Quick Jump Plugin 
  * by Dickson(git:vicksonzero)
- * uncomment the above line (remove the first two //'s) to use the script
+ * uncomment the first line (remove the first two //'s) to use the script as bookmarklet
  * Disclaimer: 
  * use at your own risk, as it is just a hack to grab all 
  * information from the page. It is not supported by Google at all
@@ -12,6 +12,7 @@
 var a = (function() {
 	/* Edit this object to customize */
 	var options={
+		/* css styles for the content panel */
 		style:{
 			x:"0px",
 			y:"100px",
@@ -21,14 +22,14 @@ var a = (function() {
 			bgc:"rgba(100,100,100,0.2)",
 			zIndex:"1000"
 		},
-		jumpToCardTrigger:"onclick",/* any event on a link, eg: onclick, onmouseenter */
+		jumpToCardTrigger:"onclick",/* any jquery event on a link, eg: onclick, onmouseenter */
 		classNames:{
 			container:"notes-container",
 			card:"IZ65Hb-n0tgWb",
 			title:"r4nke-YPqjbf"
 		}
 	};
-	/* Try not to edit beyond this line */
+	/* Not for customization beyond this line */
 	var listContainer;
 	var d = document.createElement("div");
 	setStyles(d);
