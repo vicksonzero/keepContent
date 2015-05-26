@@ -11,8 +11,9 @@ Last seen working date: **2015-05-26**
 1. open [bookmarklet.js][1]
 2. copy all the sourcecode from line `//javascript:` all the way to `})();`
 3. create a bookmark in your browser and name it `keepContent`
-4. paste the source code to the address field
+4. paste the source code to the address field of the bookmark
 5. remove the very first `//` signs from the code
+6. save the bookmark
 
 #How to use
 1. open Google Keep webapp from your browser
