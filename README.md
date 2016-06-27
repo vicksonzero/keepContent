@@ -1,6 +1,10 @@
 keepContent
 ===========
 
+Notice
+------
+keepContent is **Discontinued**. please `fork` this repo to keep it running. see this: [Issue #1](issue-1)
+
 A neat bookmarklet to organize your Google Keep notes.
 
 It creates a table of content for your Google Keep, and let you jump to a specific note by clicking on the title
@@ -29,3 +33,4 @@ Last seen working date: **2015-05-26**
 3. follow `How to install` above to update the bookmarklet with new config
 
 [1]:https://github.com/vicksonzero/keepContent/blob/master/bookmarklet.js
+[issue-1]: https://github.com/vicksonzero/keepContent/issues/1
