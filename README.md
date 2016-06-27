@@ -1,9 +1,9 @@
-keepContent
-===========
-
 Notice
 ------
-keepContent is **Discontinued**. please `fork` this repo to keep it running. see this: [Issue #1](issue-1)
+_keepContent_ is **Discontinued**. please `fork` this repo to keep it running. see this: [Issue #1](issue-1)
+
+keepContent
+===========
 
 A neat bookmarklet to organize your Google Keep notes.
 
